@@ -1,5 +1,5 @@
 {
-  "name": "gitlab-merge-request-enhancer",
+  "name": "gitlab-approved-merge-request-style-chrome-extension",
   "version": "1.0.0",
   "description": "Chrome extension that enhances GitLab merge request pages",
   "scripts": {
