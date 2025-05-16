@@ -1,12 +1,15 @@
 {
-  "name": "gitlabmergerequestchromeextension",
+  "name": "gitlab-merge-request-enhancer",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Chrome extension that enhances GitLab merge request pages",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "chrome-extension",
+    "gitlab",
+    "merge-requests"
+  ],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "MIT"
 }
