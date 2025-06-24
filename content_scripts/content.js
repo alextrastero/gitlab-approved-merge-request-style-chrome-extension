@@ -4,7 +4,7 @@ async function enhanceMergeRequestPage() {
 
     elements.forEach(el => {
       const label = (el.getAttribute('aria-label') || '').trim().toLowerCase();
-      if (/^2 approvals?$/.test(label)) {
+      if (/approvals?$/.test(label)) {
         el.textContent = '🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀'
 
         // find the nearest ancestor matching .issue.merge-request
