@@ -5,13 +5,14 @@ async function enhanceMergeRequestPage() {
     elements.forEach(el => {
       const label = (el.getAttribute('aria-label') || '').trim().toLowerCase();
       if (/approvals?$/.test(label)) {
-        el.textContent = '🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀'
+        el.textContent = '🚀'
 
         // find the nearest ancestor matching .issue.merge-request
         const parent = el.closest('.issue.merge-request');
 
         if (parent) {
-          parent.style.outline = '2px dashed var(--gl-badge-success-icon-color-default)';
+          parent.style.backgroundColor = 'var(--gl-badge-success-background-color-default)';
+          parent.style.marginBottom = '4px';
           parent.style.borderRadius = '4px';
         }
       }
